@@ -14,10 +14,11 @@ Load the templatetag library and pass the username you want to query to the `ins
 
 ```django
 {% load instagramfeed_tags %}
-{% instagramfeed_photos "username" as photos %}
-{% for photo in photos %}
-  <a href="{{ photo.link }}">
-    <img src="{{ photo.images.0.source }}" alt="{{ photo.alt_text }}">
+
+{% instagram_posts "USERNAME HERE" as posts %}
+{% for posts in post %}
+  <a href="https://instagram.com/p/{{ post.shortcode }}">
+    <img src="{{ post.thumbnail_src }}" alt="{{ post.edge_media_to_caption.edges.0.node.text }}">
   </a>
 {% endfor %}
 ```
