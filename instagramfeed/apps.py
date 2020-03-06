@@ -6,4 +6,4 @@ from django.apps import AppConfig
 
 class Config(AppConfig):
     name = "instagramfeed"
-    verbose_name = "Facebook Feed"
+    verbose_name = "Instagram Feed"

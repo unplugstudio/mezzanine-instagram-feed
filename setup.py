@@ -29,12 +29,12 @@ if sys.argv[:2] == ["setup.py", "release"]:
     sys.exit()
 
 setup(
-    name="mezzanine-facebook-feed",
+    name="mezzanine-instagram-feed",
     version=__version__,
-    description="Connect Mezzanine sites to Facebook feeds",
+    description="Connect Mezzanine sites to Instagram feeds",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/unplugstudio/mezzanine-facebook-feed",
+    url="https://github.com/unplugstudio/mezzanine-instagram-feed",
     author="Unplug Studio",
     author_email="hello@unplug.studio",
     license="MIT",
@@ -50,7 +50,7 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
     ],
-    keywords="django mezzanine facebook",
+    keywords="django mezzanine instagram",
     packages=find_packages(),
     install_requires=["mezzanine>=4.3.0"],
     include_package_data=True,
