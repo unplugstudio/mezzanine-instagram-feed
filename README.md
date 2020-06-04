@@ -23,6 +23,14 @@ Load the templatetag library and pass the username you want to query to the `ins
 {% endfor %}
 ```
 
+## Configuration
+
+Configuration variables read from `settings.py`:
+
+| Setting          | Default | Description                                                   |
+| ---------------- | ------- | ------------------------------------------------------------- |
+| `SCRAPERAPI_KEY` | `None`  | If set will use scraperapi.com to proxy requests to Instagram |
+
 ## Contributing
 
 Review contribution guidelines at [CONTRIBUTING.md].
