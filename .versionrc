@@ -1,8 +1,0 @@
-{
-  "bumpFiles": [
-    {
-      "filename": "instagramfeed/__init__.py",
-      "updater": "regex-updater.js"
-    }
-  ]
-}
