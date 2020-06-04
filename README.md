@@ -1,7 +1,10 @@
 
 # Mezzanine Instagram Feed
 
-Connect Mezzanine sites to Instagram feeds
+Connect Mezzanine sites to Instagram feeds.
+
+[![PyPI version](https://badge.fury.io/py/mezzanine-instagram-feed.svg)](https://badge.fury.io/py/mezzanine-instagram-feed)
+![Workflow status](https://github.com/unplugstudio/mezzanine-instagram-feed/workflows/Test%20and%20release/badge.svg)
 
 ## Installation
 
@@ -10,7 +13,7 @@ Connect Mezzanine sites to Instagram feeds
 
 ## Usage
 
-Load the templatetag library and pass the username you want to query to the `instagramfeed_photos` template tag.
+Load the templatetag library and pass the username you want to query to the `instagram_posts` template tag.
 
 ```django
 {% load instagramfeed_tags %}
@@ -22,6 +25,8 @@ Load the templatetag library and pass the username you want to query to the `ins
   </a>
 {% endfor %}
 ```
+
+**Keep in mind requests to Instagram are cached for 8 hours so new page loads don't always trigger new requests.**
 
 ## Configuration
 
